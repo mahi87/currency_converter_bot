@@ -4,9 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
+currencyconverter = "==0.17.17"
+python-telegram-bot = "==20.8"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.12"
