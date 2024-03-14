@@ -1,5 +1,6 @@
 from currency_converter import CurrencyConverter
 from telegram.ext import ApplicationBuilder, CommandHandler
+from prompt import get_values_from_input
 
 
 def converter(input_arr):
@@ -14,7 +15,8 @@ def converter(input_arr):
 
 
 async def convert_handler(update, context):
-    result = converter(context.args)
+    input_arr = get_values_from_input(context.args)
+    result = converter(input_arr)
     await context.bot.send_message(chat_id=update.effective_chat.id, text=result)
 
 
