@@ -7,6 +7,7 @@ name = "pypi"
 currencyconverter = "==0.17.17"
 python-telegram-bot = "==20.8"
 openai = "==1.13.3"
+python-dotenv = "==1.0.1"
 
 [dev-packages]
 pytest = "*"

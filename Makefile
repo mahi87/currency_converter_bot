@@ -1,0 +1,2 @@
+launch:
+	python app.py
